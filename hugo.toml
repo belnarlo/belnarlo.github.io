@@ -1,9 +1,19 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://belnarlo.github.io"
 languageCode = 'en-gb'
 title = "Belnarlo's Blog"
 # Change the default theme to be use when building the site with Hugo
-theme = "relearn"
+theme = "m10c"
 
 # For search functionality
 [outputs]
 home = [ "HTML", "RSS", "SEARCH"]
+
+[params]
+author = "Timo Vlot"
+description = "Semi Nutso Dutch guy in Scotland"
+avatar = "images/timo.png"
+
+[[params.social]]
+icon = "github"
+name = "My Github"
+url = "https://github.com/belnarlo"
