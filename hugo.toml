@@ -13,7 +13,7 @@ author = "Timo Vlot"
 description = "Semi Nutso Dutch guy in Scotland"
 avatar = "images/timo.png"
 
-[[params.social]]
+[params.social]
 icon = "github"
 name = "My Github"
 url = "https://github.com/belnarlo"
