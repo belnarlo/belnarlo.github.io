@@ -1,19 +1,90 @@
 baseURL = 'https://belnarlo.github.io'
 languageCode = 'en-gb'
+DefaultContentLanguage = "en"
 title = "Belnarlo's Blog"
-# Change the default theme to be use when building the site with Hugo
-theme = "m10c"
+author = "Timo Vlot"
+copyright = "© [Timo Vlot](https://vlot.scot)"
+theme = "risotto"
+paginate = 3
+enableInlineShortcodes = true
+ignoreErrors = ["error-remote-getjson"]
+sectionPagesMenu = "main"
 
 # For search functionality
 [outputs]
 home = [ "HTML", "RSS" ]
 
 [params]
-author = "Timo Vlot"
-description = "Semi Nutso Dutch guy in Scotland"
-avatar = "images/timo.png"
+noindex = false
 
-[params.social]
-icon = "github"
-name = "My Github"
+[params.theme]
+palette = "base16-dark"
+
+# Sidebar: about/bio
+[params.about]
+title = "Timo Vlot"
+description = "A semi nutso Dutch dude in Scotland"
+logo = "images/timo.png"
+
+# Sidebar: social links
+# Available icon sets:
+# * FontAwesome 6 <https://fontawesome.com/> ('fa-brands', 'fa-normal', or 'fa-solid' for brands)
+# * Academicons <https://jpswalsh.github.io/academicons> ('ai ai-')
+
+[[params.socialLinks]]
+icon = "fa-brands fa-github"
+title = "GitHub"
 url = "https://github.com/belnarlo"
+
+[menu]
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+# For hugo >= 0.60.0, enable inline HTML
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup]
+
+  # Table of contents
+  # Add toc = true to content front matter to enable
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel   = 3
+    ordered    = true
+
+[privacy]
+
+  [privacy.vimeo]
+    disabled = false
+    simple = true
+
+  [privacy.twitter]
+    disabled = false
+    enableDNT = true
+    simple = true
+
+  [privacy.instagram]
+    disabled = false
+    simple = true
+
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
+
+[services]
+
+  [services.instagram]
+    disableInlineCSS = true
+
+  [services.twitter]
+    disableInlineCSS = true
