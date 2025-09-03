@@ -39,17 +39,19 @@ url = "https://github.com/belnarlo"
 [menu]
 
   [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
+    name = 'about'
+    url = '/about/'
     weight = 10
+  [[menu.main]]
+    name = 'posts'
+    url = '/posts/'
+    weight = 15
 
 [taxonomies]
 category = "categories"
 tag = "tags"
 series = "series"
 
-# For hugo >= 0.60.0, enable inline HTML
 [markup.goldmark.renderer]
 unsafe = true
 
