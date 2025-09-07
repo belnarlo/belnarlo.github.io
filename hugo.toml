@@ -52,6 +52,9 @@ category = "categories"
 tag = "tags"
 series = "series"
 
+[params.categories]
+homelab = ["infrastructure", "automation", "monitoring", "development", "learning", "personal", "troubleshooting"]
+
 [markup.goldmark.renderer]
 unsafe = true
 
